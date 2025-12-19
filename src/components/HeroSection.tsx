@@ -13,7 +13,7 @@ const benefits = [
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero pt-24 pb-16 overflow-hidden">
+    <section id="avantages" className="min-h-screen bg-gradient-hero pt-32 pb-16 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
           {/* Device Mockups */}
