@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
         display: ['Poppins', 'sans-serif'],
+        handwriting: ['Caveat', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
