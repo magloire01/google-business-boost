@@ -32,10 +32,10 @@ const BoostCTASection = () => {
 
         <div className="bg-gold rounded-xl p-6 max-w-3xl mx-auto mb-12 text-center">
           <p className="text-white font-bold text-lg mb-2">
-            Tarif de lancement réservé aux 10 premiers clients seulement !
+            Tarif de lancement réservé aux 500 premiers clients seulement pour le booste d'optimisation complète !
           </p>
           <p className="text-white font-semibold">
-            Ensuite, elle passera au tarif normal de 349€ HT.
+            Ensuite, elle passera au tarif normal.
           </p>
         </div>
 

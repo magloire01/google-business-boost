@@ -41,7 +41,7 @@ const Header = () => {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50 shadow-sm">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <img src={logo} alt="Google Business Boost" className="h-10 md:h-14" />
+            <img src={logo} alt="Google Business Boost" className="h-12 md:h-12" />
           </a>
 
           {/* Desktop nav */}

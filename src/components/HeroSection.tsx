@@ -15,9 +15,9 @@ const HeroSection = () => {
   return (
     <section id="avantages" className="min-h-screen bg-gradient-hero pt-32 pb-16 overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]"> {/* min-h-[calc(100vh-8rem)] permet d'ajuster la hauteur du conteneur sur telephone */}
           {/* Device Mockups */}
-          <div className="relative flex justify-center items-center order-2 lg:order-1">
+          <div className="relative flex justify-center items-center order-1 lg:order-1">
             <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <img
                 src={laptopMockup}
@@ -34,7 +34,7 @@ const HeroSection = () => {
           </div>
 
           {/* Content */}
-          <div className="order-1 lg:order-2 text-center lg:text-left">
+          <div className="order-2 lg:order-2 text-center lg:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 animate-fade-up">
               <span className="text-gradient-teal">
                 Boostez votre visibilité locale et attirez plus de clients dès aujourd'hui !
