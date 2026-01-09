@@ -13,53 +13,53 @@ const benefits = [
 
 const HeroSection = () => {
   return (
-    <section id="avantages" className="min-h-screen max-w-full mx-auto bg-gradient-hero pt-32 pb-16 overflow-x-hidden">
+    <section id="avantages" className="min-h-screen max-w-full mx-auto bg-gradient-hero pt-32 pb-16 overflow-x-hidden  max-w-[calc(100vw-2rem)]">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center mx-auto min-h-[calc(100vh-8rem)] max-w-[calc(100vw-2rem)]"> {/* min-h-[calc(100vh-8rem)] permet d'ajuster la hauteur du conteneur sur telephone */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mx-auto min-h-[calc(100vh-8rem)]"> {/* min-h-[calc(100vh-8rem)] permet d'ajuster la hauteur du conteneur sur telephone */}
           {/* Device Mockups */}
           <div className="relative flex justify-center items-center order-1 lg:order-1">
             <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <img
                 src={laptopMockup}
                 alt="Google Maps résultats locaux"
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg drop-shadow-2xl animate-float"
+                className="w-full max-w-lg drop-shadow-2xl animate-float"
               />
               <img
                 src={phoneMockup}
                 alt="Google Business Profile"
-                className="absolute -right-2 sm:-right-6 md:-right-12 bottom-0 w-20 sm:w-28 md:w-40 lg:w-48 drop-shadow-2xl animate-float" // Tailles et position ajustées pour éviter de sortir de l'écran sur mobile
+                className="absolute md:-right-12 bottom-0 w-32 md:w-48 drop-shadow-2xl animate-float" // md pour ajuster la position sur les ecrans moyens
                 style={{ animationDelay: "0.5s" }}
               />
             </div>
           </div>
 
           {/* Content */}
-          <div className="order-2 lg:order-2 text-center lg:text-left max-w-xl mx-auto">
+          <div className="order-2 lg:order-2 text-center lg:text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 animate-fade-up">
               <span className="text-gradient-teal">
                 Boostez votre visibilité locale et attirez plus de clients dès aujourd'hui !
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl text-foreground font-medium mb-6 sm:mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <p className="text-lg md:text-xl text-foreground font-medium mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Votre fiche Google Business optimisée pour plus de trafic et de crédibilité, sans effort.
             </p>
 
-            <ul className="space-y-2 sm:space-y-3 md:space-y-4 mb-8 sm:mb-10">
+            <ul className="space-y-3 mb-10">
               {benefits.map((benefit, index) => (
                 <li
                   key={index}
-                  className="flex items-start gap-2 sm:gap-3 text-foreground animate-fade-up"
+                  className="flex items-center gap-3 text-foreground animate-fade-up"
                   style={{ animationDelay: `${0.15 + index * 0.05}s` }}
                 >
                   <Check className="w-5 h-5 text-primary flex-shrink-0" strokeWidth={3} />
-                  <span className="text-sm sm:text-base md:text-lg">{benefit}</span>
+                  <span className="text-base md:text-lg">{benefit}</span>
                 </li>
               ))}
             </ul>
 
             <div className="animate-fade-up" style={{ animationDelay: "0.4s" }}>
-              <Button variant="ctaLarge" size="xl" className="w-full sm:w-auto">
+              <Button variant="ctaLarge" size="xl" className="w-[calc(100vw-3rem)] sm:w-auto">
                 Je booste mon business maintenant
               </Button>
             </div>
