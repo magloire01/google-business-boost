@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import laptopMockup from "@/assets/laptop-mockup.png";
 import phoneMockup from "@/assets/phone-mockup.png";
+import GoogleLogo from "@/assets/Google-Logo.png";
 
 const benefits = [
   "Boostez votre référencement local",
@@ -13,12 +14,17 @@ const benefits = [
 
 const HeroSection = () => {
   return (
-    <section id="avantages" className="min-h-screen max-w-full mx-auto bg-gradient-hero pt-32 pb-16 overflow-x-hidden  max-w-[calc(100vw-2rem)]">
+    <section id="avantages" className="min-h-screen max-w-full mx-auto bg-gradient-hero pt-22 pb-16 overflow-x-hidden  max-w-[calc(100vw-2rem)]">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center mx-auto min-h-[calc(100vh-8rem)]"> {/* min-h-[calc(100vh-8rem)] permet d'ajuster la hauteur du conteneur sur telephone */}
           {/* Device Mockups */}
           <div className="relative flex justify-center items-center order-1 lg:order-1">
             <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <img
+                src={GoogleLogo}
+                alt="Google Logo"
+                className="w-40 h-30 mb-4 mx-auto"
+              />
               <img
                 src={laptopMockup}
                 alt="Google Maps résultats locaux"
