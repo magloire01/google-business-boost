@@ -58,19 +58,9 @@ const PricingSection = () => {
               Avec Boost mensuel, je gère votre fiche en l'alimentant tous les mois pour améliorer votre SEO local sur le long terme.
             </p>
           </div>
-
-          {/* Boost Optimisé Complet Description */}
-          <div>
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-teal mb-3 sm:mb-4">
-              Boost optimisé complet : optimisation + gestion mensuelle
-            </h3>
-            <p className="text-sm sm:text-base text-foreground">
-              Avec Boost optimisé complet, vous profitez à la fois de l'optimisation complète de votre fiche (Boost Local) et de la gestion mensuelle (Boost mensuel) pour des résultats durables.
-            </p>
-          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
           {/* Boost Local Card */}
           <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
             <h4 className="text-lg sm:text-xl font-bold text-teal text-center mb-2 sm:mb-4">BOOST LOCAL</h4>
@@ -113,29 +103,127 @@ const PricingSection = () => {
             </div>
           </div>
 
-          {/* Boost Optimisé Complet Card */}
+          {/* Mise à jour + IA */}
           <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
-            <h4 className="text-lg sm:text-xl font-bold text-teal text-center mb-2 sm:mb-4">BOOST OPTIMISÉ COMPLET</h4>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-coral text-center mb-2">
-              370€ HT
-            </p>
+            <h4 className="text-lg sm:text-xl font-bold text-teal text-center mb-2 sm:mb-4">MISE À JOUR + IA</h4>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-coral text-center mb-2">800€ HT</p>
             <ul className="space-y-2 sm:space-y-3 mt-4 sm:mt-6 lg:mt-8">
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
-                <span className="text-xs sm:text-sm lg:text-base text-foreground">Comprend le Boost Local (optimisation complète de la fiche)</span>
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Mise à jour complète de vos contenus avec optimisation IA.</span>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
-                <span className="text-xs sm:text-sm lg:text-base text-foreground">Inclut la gestion mensuelle de la fiche (Boost mensuel)</span>
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Amélioration de la clarté, du ton et de la cohérence de vos messages.</span>
               </li>
               <li className="flex items-start gap-2 sm:gap-3">
                 <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
-                <span className="text-xs sm:text-sm lg:text-base text-foreground">Solution complète pour maximiser votre visibilité locale</span>
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Suggestions d'optimisation continue basées sur les performances.</span>
               </li>
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
               <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
-                Je choisis le Boost optimisé complet
+                Je choisis la mise à jour + IA
+              </Button>
+            </div>
+          </div>
+
+          {/* Sécurité + Remise d'accès */}
+          <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
+            <h4 className="text-lg sm:text-xl font-bold text-teal text-center mb-2 sm:mb-4">SÉCURITÉ + REMISE D'ACCÈS</h4>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-coral text-center mb-2">450€ HT</p>
+            <ul className="space-y-2 sm:space-y-3 mt-4 sm:mt-6 lg:mt-8">
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Audit des accès actuels et sécurisation de vos comptes clés.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Remise à plat des droits utilisateurs et récupération des accès perdus.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Mise en place de bonnes pratiques de sécurité simples à suivre.</span>
+              </li>
+            </ul>
+            <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
+              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+                Je choisis Sécurité + Remise d'accès
+              </Button>
+            </div>
+          </div>
+
+          {/* Création de site web & Hébergement */}
+          <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg overflow-hidden">
+            <h4 className="text-lg sm:text-xl font-bold text-teal text-center mb-2 sm:mb-4">CRÉATION DE SITE WEB & HÉBERGEMENT</h4>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-coral text-center mb-2">1500€ HT</p>
+            <ul className="space-y-2 sm:space-y-3 mt-4 sm:mt-6 lg:mt-8">
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Création d'un site vitrine professionnel adapté à votre activité.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Hébergement du site et configuration du nom de domaine.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Site optimisé pour le mobile et les premières bases de SEO.</span>
+              </li>
+            </ul>
+            <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
+              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+                Je choisis la création de site web & hébergement
+              </Button>
+            </div>
+          </div>
+
+          {/* Référencement et Mise à jour de la page */}
+          <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg overflow-hidden">
+            <h4 className="text-lg sm:text-xl font-bold text-teal text-center mb-2 sm:mb-4">RÉFÉRENCEMENT & MISE À JOUR DE LA PAGE</h4>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-coral text-center mb-2">500€ HT</p>
+            <ul className="space-y-2 sm:space-y-3 mt-4 sm:mt-6 lg:mt-8">
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Optimisation SEO on-page de votre page principale.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Mise à jour des contenus pour alignement avec vos offres actuelles.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Suivi des principaux indicateurs de visibilité.</span>
+              </li>
+            </ul>
+            <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
+              <Button variant="cta" size="lg" className="w-auto sm:w-auto text-sm sm:text-sm mx-3 px-4 sm:px-6">
+                Je choisis le référencement & la mise à jour de la page
+              </Button>
+            </div>
+          </div>
+
+          {/* Assistance Technique */}
+          <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
+            <h4 className="text-lg sm:text-xl font-bold text-teal text-center mb-2 sm:mb-4">ASSISTANCE TECHNIQUE</h4>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-coral text-center mb-2">350€ HT</p>
+            <ul className="space-y-2 sm:space-y-3 mt-4 sm:mt-6 lg:mt-8">
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Assistance pour résoudre vos blocages techniques du quotidien.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Accompagnement sur l'utilisation de vos outils digitaux.</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <Check className="w-4 h-4 sm:w-5 sm:h-5 text-teal flex-shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm lg:text-base text-foreground">Support par e-mail et visio selon vos besoins.</span>
+              </li>
+            </ul>
+            <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
+              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+                Je choisis l'assistance technique
               </Button>
             </div>
           </div>
