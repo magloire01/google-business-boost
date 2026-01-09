@@ -11,9 +11,9 @@ const benefits = [
 
 const BoostCTASection = () => {
   return (
-    <section className="bg-pink-soft/30 py-20 md:py-28">
+    <section className="bg-pink-soft/30 py-12 sm:py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground/60 text-center mb-12 italic">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground/60 text-center mb-8 sm:mb-12 italic px-2">
           Boostez votre visibilité locale et attirez plus de clients dès aujourd'hui !
         </h2>
 
@@ -30,46 +30,46 @@ const BoostCTASection = () => {
           </ul>
         </div>
 
-        <div className="bg-gold rounded-xl p-6 max-w-3xl mx-auto mb-12 text-center">
-          <p className="text-white font-bold text-lg mb-2">
+        <div className="bg-gold rounded-xl p-4 sm:p-6 max-w-3xl mx-auto mb-8 sm:mb-12 text-center">
+          <p className="text-white font-bold text-sm sm:text-lg mb-2">
             Tarif de lancement réservé aux 500 premiers clients seulement pour le booste d'optimisation complète !
           </p>
-          <p className="text-white font-semibold">
+          <p className="text-white font-semibold text-sm sm:text-base">
             Ensuite, elle passera au tarif normal.
           </p>
         </div>
 
-        <div className="flex justify-center mb-12">
-          <img src={logo} alt="Google Business Boost" className="h-32 md:h-40" />
+        <div className="flex justify-center mb-8 sm:mb-12">
+          <img src={logo} alt="Google Business Boost" className="h-24 sm:h-32 md:h-40" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-            <h4 className="text-xl font-bold text-teal mb-2">BOOST LOCAL</h4>
-            <p className="text-sm text-muted-foreground mb-4">Audit + Optimisation</p>
-            <p className="text-2xl font-bold text-coral mb-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg text-center">
+            <h4 className="text-lg sm:text-xl font-bold text-teal mb-2">BOOST LOCAL</h4>
+            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">Audit + Optimisation</p>
+            <p className="text-lg sm:text-2xl font-bold text-coral mb-1">
               290€ HT (pour les 10 premiers clients)
             </p>
-            <p className="text-sm text-muted-foreground mb-4">au lieu de 349€ HT</p>
-            <p className="text-sm text-foreground mb-6">
+            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">au lieu de 349€ HT</p>
+            <p className="text-xs sm:text-sm text-foreground mb-4 sm:mb-6">
               Idéal pour : ceux qui veulent une fiche optimisée
             </p>
-            <Button variant="cta" size="lg">
+            <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
               Je booste mon business maintenant
             </Button>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-            <h4 className="text-xl font-bold text-pink-soft mb-2">BOOST MENSUEL</h4>
-            <p className="text-sm text-muted-foreground mb-4">Suivi et gestion continue</p>
-            <p className="text-2xl font-bold text-coral mb-1">
+          <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg text-center">
+            <h4 className="text-lg sm:text-xl font-bold text-pink-soft mb-2">BOOST MENSUEL</h4>
+            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">Suivi et gestion continue</p>
+            <p className="text-lg sm:text-2xl font-bold text-coral mb-1">
               150€ HT / mois
             </p>
-            <p className="text-sm text-muted-foreground mb-4">paiement mensuel</p>
-            <p className="text-sm text-foreground mb-6">
+            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">paiement mensuel</p>
+            <p className="text-xs sm:text-sm text-foreground mb-4 sm:mb-6">
               Idéal pour : ceux qui veulent un suivi régulier
             </p>
-            <Button variant="cta" size="lg">
+            <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
               Je veux un suivi mensuel
             </Button>
           </div>

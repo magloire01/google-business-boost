@@ -31,13 +31,13 @@ const faqs = [
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="bg-white py-20 md:py-28">
+    <section id="faq" className="bg-white py-12 sm:py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-handwriting text-foreground/60 text-center mb-4">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-handwriting text-foreground/60 text-center mb-3 sm:mb-4">
           Vous avez encore des questions ?
         </h2>
 
-        <h3 className="text-xl md:text-2xl font-bold text-teal mb-12 max-w-4xl mx-auto">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-teal mb-8 sm:mb-12 max-w-4xl mx-auto">
           FAQ Google Business Boost
         </h3>
 
@@ -47,11 +47,11 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-teal rounded-lg px-6 border-none"
+                className="bg-teal rounded-lg px-3 sm:px-6 border-none"
               >
-                <AccordionTrigger className="text-white hover:no-underline py-4">
-                  <div className="flex items-center gap-3 text-left">
-                    <Zap className="w-5 h-5 flex-shrink-0" />
+                <AccordionTrigger className="text-white hover:no-underline py-3 sm:py-4">
+                  <div className="flex items-center gap-2 sm:gap-3 text-left text-sm sm:text-base">
+                    <Zap className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                     <span>{faq.question}</span>
                   </div>
                 </AccordionTrigger>
