@@ -7,7 +7,7 @@ const stats = [
 
 const WhyOptimizeSection = () => {
   return (
-    <section id="pourquoi" className="bg-lavender-light py-12 sm:py-20 md:py-28">
+    <section id="pourquoi" className="bg-lavender-light py-12 sm:py-20 md:py-28"> {/* Padding ajusté pour les petits et moyens ecrans */}
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-teal mb-6 sm:mb-8">
