@@ -7,25 +7,25 @@ const stats = [
 
 const WhyOptimizeSection = () => {
   return (
-    <section id="pourquoi" className="bg-lavender-light py-20 md:py-28">
+    <section id="pourquoi" className="bg-lavender-light py-12 sm:py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-teal mb-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gradient-teal mb-6 sm:mb-8">
             Pourquoi vous devez obligatoirement optimiser votre fiche Google Business Profile ?
           </h2>
 
-          <p className="text-lg text-foreground font-medium mb-8">
+          <p className="text-base sm:text-lg text-foreground font-medium mb-6 sm:mb-8">
             Parce que l'impact positif qu'elle peut avoir sur votre entreprise est considérable :
           </p>
 
-          <ul className="space-y-4">
+          <ul className="space-y-3 sm:space-y-4">
             {stats.map((stat, index) => (
               <li
                 key={index}
-                className="flex items-start gap-3 text-foreground"
+                className="flex items-start gap-2 sm:gap-3 text-foreground"
               >
-                <span className="w-2 h-2 rounded-full bg-foreground mt-2.5 flex-shrink-0" />
-                <span className="text-base md:text-lg font-medium">{stat}</span>
+                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-foreground mt-2 sm:mt-2.5 flex-shrink-0" />
+                <span className="text-sm sm:text-base md:text-lg font-medium">{stat}</span>
               </li>
             ))}
           </ul>

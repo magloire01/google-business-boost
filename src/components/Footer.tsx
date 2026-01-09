@@ -14,11 +14,11 @@ const Footer = () => {
   return (
     <footer className="bg-purple-dark text-white">
       {/* Main footer */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 py-10 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Logo & description */}
-          <div className="lg:col-span-1">
-            <img src={logo} alt="Google Business Boost" className="h-16 mb-6 brightness-200" />
+          <div className="sm:col-span-2 lg:col-span-1">
+            <img src={logo} alt="Google Business Boost" className="h-12 sm:h-16 mb-4 sm:mb-6 brightness-200" />
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Spécialiste de l'optimisation de fiches Google Business Profile pour les entreprises locales. Boostez votre visibilité et attirez plus de clients.
             </p>
@@ -146,15 +146,15 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/60">
-            <p>© {currentYear} Google Business Boost. Tous droits réservés.</p>
-            <div className="flex gap-6">
+        <div className="container mx-auto px-4 py-4 sm:py-6">
+          <div className="flex flex-col items-center gap-3 sm:gap-4 text-xs sm:text-sm text-white/60">
+            <p className="text-center">© {currentYear} Google Business Boost. Tous droits réservés.</p>
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a href="#" className="hover:text-white transition-colors">
                 Mentions légales
               </a>
               <a href="#" className="hover:text-white transition-colors">
-                Politique de confidentialité
+                Confidentialité
               </a>
               <a href="#" className="hover:text-white transition-colors">
                 CGV
