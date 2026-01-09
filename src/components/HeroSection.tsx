@@ -13,9 +13,9 @@ const benefits = [
 
 const HeroSection = () => {
   return (
-    <section id="avantages" className="min-h-screen bg-gradient-hero pt-32 pb-16 overflow-hidden">
+    <section id="avantages" className="min-h-screen bg-gradient-hero pt-32 pb-16 overflow-x-hidden">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]"> {/* min-h-[calc(100vh-8rem)] permet d'ajuster la hauteur du conteneur sur telephone */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mx-auto min-h-[calc(100vh-8rem)] max-w-[calc(100vw-2rem)]"> {/* min-h-[calc(100vh-8rem)] permet d'ajuster la hauteur du conteneur sur telephone */}
           {/* Device Mockups */}
           <div className="relative flex justify-center items-center order-1 lg:order-1">
             <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
@@ -27,7 +27,7 @@ const HeroSection = () => {
               <img
                 src={phoneMockup}
                 alt="Google Business Profile"
-                className="absolute -right-4 md:-right-12 bottom-0 w-32 md:w-48 drop-shadow-2xl animate-float"
+                className="absolute md:-right-12 bottom-0 w-32 md:w-48 drop-shadow-2xl animate-float" // md pour ajuster la position sur les ecrans moyens
                 style={{ animationDelay: "0.5s" }}
               />
             </div>
