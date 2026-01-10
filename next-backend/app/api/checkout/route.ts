@@ -49,9 +49,7 @@ const PACKS = {
 
 type PackId = keyof typeof PACKS;
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
-  apiVersion: "2022-11-15",
-});
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
 
 const allowedOrigin = process.env.ALLOWED_ORIGIN || "http://localhost:8080";
 
