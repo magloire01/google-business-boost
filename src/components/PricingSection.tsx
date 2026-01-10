@@ -27,6 +27,41 @@ const boostMensuelFeatures = [
 ];
 
 const PricingSection = () => {
+  const handleCheckout = async (packId: string) => {
+    try {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
+
+      const response = await fetch(`${backendUrl}/api/checkout`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          packId,
+          successUrl: window.location.origin + "/paiement/succes",
+          cancelUrl: window.location.origin + "/paiement/annule",
+        }),
+      });
+
+      if (!response.ok) {
+        console.error("Erreur lors de la création de la session Stripe", await response.text());
+        alert("Une erreur est survenue lors de la création du paiement. Merci de réessayer.");
+        return;
+      }
+
+      const data = (await response.json()) as { url?: string };
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Impossible de récupérer le lien de paiement.");
+      }
+    } catch (error) {
+      console.error("Erreur réseau ou serveur lors de l'appel à l'API de paiement", error);
+      alert("Une erreur réseau est survenue. Merci de vérifier votre connexion et de réessayer.");
+    }
+  };
+
   return (
     <section id="offres" className="bg-lavender-light py-12 sm:py-20 md:py-28">
       <div className="container mx-auto px-4">
@@ -76,7 +111,12 @@ const PricingSection = () => {
               ))}
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6"
+                onClick={() => handleCheckout("BOOST_LOCAL")}
+              >
                 Je choisis le Boost Local
               </Button>
             </div>
@@ -97,7 +137,12 @@ const PricingSection = () => {
               ))}
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6"
+                onClick={() => handleCheckout("BOOST_MENSUEL")}
+              >
                 Je choisis le Boost Mensuel
               </Button>
             </div>
@@ -122,7 +167,12 @@ const PricingSection = () => {
               </li>
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6"
+                onClick={() => handleCheckout("MISE_A_JOUR_IA")}
+              >
                 Je choisis la mise à jour + IA
               </Button>
             </div>
@@ -147,7 +197,12 @@ const PricingSection = () => {
               </li>
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6"
+                onClick={() => handleCheckout("SECURITE_REMISE_ACCES")}
+              >
                 Je choisis Sécurité + Remise d'accès
               </Button>
             </div>
@@ -172,7 +227,12 @@ const PricingSection = () => {
               </li>
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6"
+                onClick={() => handleCheckout("CREATION_SITE_HEBERGEMENT")}
+              >
                 Je choisis la création de site web & hébergement
               </Button>
             </div>
@@ -197,7 +257,12 @@ const PricingSection = () => {
               </li>
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
-              <Button variant="cta" size="lg" className="w-auto sm:w-auto text-sm sm:text-sm mx-3 px-4 sm:px-6">
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-auto sm:w-auto text-sm sm:text-sm mx-3 px-4 sm:px-6"
+                onClick={() => handleCheckout("REFERENCEMENT_MISE_A_JOUR")}
+              >
                 Je choisis le référencement & la mise à jour de la page
               </Button>
             </div>
@@ -222,7 +287,12 @@ const PricingSection = () => {
               </li>
             </ul>
             <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6">
+              <Button
+                variant="cta"
+                size="lg"
+                className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6"
+                onClick={() => handleCheckout("ASSISTANCE_TECHNIQUE")}
+              >
                 Je choisis l'assistance technique
               </Button>
             </div>

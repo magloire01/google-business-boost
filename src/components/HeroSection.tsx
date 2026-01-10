@@ -65,9 +65,11 @@ const HeroSection = () => {
             </ul>
 
             <div className="animate-fade-up" style={{ animationDelay: "0.4s" }}>
-              <Button variant="ctaLarge" size="xl" className="w-[calc(100vw-3rem)] sm:w-auto">
-                Je booste mon business maintenant
-              </Button>
+              <a href="#offres">
+                <Button key="#offres" variant="ctaLarge" size="xl" className="w-[calc(100vw-3rem)] sm:w-auto">
+                  Je booste mon business maintenant
+                </Button>
+              </a>
             </div>
           </div>
         </div>

@@ -66,9 +66,9 @@ const ProblemSection = () => {
           <p className="text-lg md:text-xl text-gradient-gold font-semibold mb-8">
             Grâce à Google Business Boost, je booste votre fiche établissement pour développer vos opportunités commerciales.
           </p>
-          <Button variant="ctaLarge" size="xl">
+          {/* <Button variant="ctaLarge" size="xl">
             Démarrer maintenant
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

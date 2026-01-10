@@ -51,12 +51,14 @@ const BoostCTASection = () => {
               290€ HT (pour les 10 premiers clients)
             </p>
             <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">au lieu de 349€ HT</p>
-            <p className="text-xs sm:text-sm text-foreground mb-4 sm:mb-6">
-              Idéal pour : ceux qui veulent une fiche optimisée
-            </p>
-            <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
-              Je booste mon business maintenant
-            </Button>
+              <p className="text-xs sm:text-sm text-foreground mb-4 sm:mb-6">
+                Idéal pour : ceux qui veulent une fiche optimisée
+              </p>
+            <a href="#offres" >
+              <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
+                Je booste mon business maintenant
+              </Button>
+            </a>
           </div>
 
           <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg text-center">
@@ -69,9 +71,11 @@ const BoostCTASection = () => {
             <p className="text-xs sm:text-sm text-foreground mb-4 sm:mb-6">
               Idéal pour : ceux qui veulent un suivi régulier
             </p>
-            <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
-              Je veux un suivi mensuel
-            </Button>
+            <a href="#offres">
+              <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
+                Je veux un suivi mensuel
+              </Button>
+            </a>
           </div>
         </div>
       </div>
