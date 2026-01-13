@@ -117,20 +117,20 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+33600000000"
+                  href="tel:+33757755997"
                   className="flex items-start gap-3 text-white/70 hover:text-white transition-colors text-sm"
                 >
                   <Phone className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span>06 00 00 00 00</span>
+                  <span>+33 7 57 75 59 97</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:contact@googlebusinessboost.fr"
+                  href="mailto:Businessboostprofile@gmail.com"
                   className="flex items-start gap-3 text-white/70 hover:text-white transition-colors text-sm"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span>contact@googlebusinessboost.fr</span>
+                  <span>Businessboostprofile@gmail.com</span>
                 </a>
               </li>
               <li>
@@ -148,7 +148,8 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 py-4 sm:py-6">
           <div className="flex flex-col items-center gap-3 sm:gap-4 text-xs sm:text-sm text-white/60">
-            <p className="text-center">© {currentYear} Google Business Boost. Tous droits réservés.</p>
+            <p className="text-center">© 2025 Google Business Boost. Tous droits réservés.</p>
+            {/* <p className="text-center">© {currentYear} Google Business Boost. Tous droits réservés.</p> */}
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               <a href="#" className="hover:text-white transition-colors">
                 Mentions légales

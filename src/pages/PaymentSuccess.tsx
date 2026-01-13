@@ -9,7 +9,7 @@ const PaymentSuccess = () => {
         <p className="text-sm sm:text-base text-foreground mb-6">
           Merci pour votre confiance ! Votre paiement a bien été pris en compte.
           <br />
-          Je reviens vers vous très rapidement avec les prochaines étapes.
+          Nous revenons vers vous très rapidement avec les prochaines étapes.
         </p>
         <Link to="/">
           <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">

@@ -121,7 +121,7 @@ const ProcessSection = () => {
         {/* Monthly management */}
         <div className="mt-16 max-w-4xl mx-auto">
           <h3 className="text-xl font-bold text-white mb-6">
-            Et si je gère votre fiche Google Business Profile :
+            Et si nous gèrons votre fiche Google Business Profile :
           </h3>
           <ul className="space-y-2 text-white mb-8">
             {monthlyManagement.map((item, index) => (
@@ -137,7 +137,7 @@ const ProcessSection = () => {
               Je veux booster mon business maintenant
             </Button>
             <p className="text-white mt-4 font-medium">
-              Remplissez le questionnaire et je reviens vite vers vous. Promis ! 😊
+              Remplissez le questionnaire et nous revenons vite vers vous. Promis ! 😊
             </p>
           </div>
         </div>

@@ -64,7 +64,7 @@ const ProblemSection = () => {
             Votre fiche Google My Business optimisée, sans mettre les mains dans le cambouis :
           </h3>
           <p className="text-lg md:text-xl text-gradient-gold font-semibold mb-8">
-            Grâce à Google Business Boost, je booste votre fiche établissement pour développer vos opportunités commerciales.
+            Grâce à Google Business Boost, Nous boostons votre fiche établissement pour développer vos opportunités commerciales.
           </p>
           {/* <Button variant="ctaLarge" size="xl">
             Démarrer maintenant

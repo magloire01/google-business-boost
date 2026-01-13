@@ -70,7 +70,7 @@ const PricingSection = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-foreground mb-8 sm:mb-12 max-w-4xl mx-auto">
-          J'ai créé 3 offres spécialement pensées pour vous.
+          Nous avons créé 3 offres spécialement pensées pour vous.
         </p>
 
         <div className="grid grid-cols-1 gap-4 sm:gap-6 max-w-6xl mx-auto mb-6 sm:mb-8">
@@ -80,7 +80,7 @@ const PricingSection = () => {
               Boost Local : l'optimisation mensuelle de votre fiche établissement
             </h3>
             <p className="text-sm sm:text-base text-foreground">
-              Avec Boost Local, j'audite et je retravaille votre fiche Google Business Profile. J'optimise tous les points qui vont booster sa visibilité et améliorer son classement dans les résultats de recherche locale.
+              Avec Boost Local, nous auditons et nous retravaillons votre fiche Google Business Profile. Nous optimisons tous les points qui vont booster sa visibilité et améliorer son classement dans les résultats de recherche locale.
             </p>
           </div>
 
@@ -90,7 +90,7 @@ const PricingSection = () => {
               Boost mensuel : gestion mensuelle de votre fiche établissement
             </h3>
             <p className="text-sm sm:text-base text-foreground">
-              Avec Boost mensuel, je gère votre fiche en l'alimentant tous les mois pour améliorer votre SEO local sur le long terme.
+              Avec Boost mensuel, nous gèrons votre fiche en l'alimentant tous les mois pour améliorer votre SEO local sur le long terme.
             </p>
           </div>
         </div>

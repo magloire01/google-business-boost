@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Est-ce que Google Business est gratuit ?",
-    answer: "Oui, la création et la gestion d'une fiche Google Business Profile est entièrement gratuite. Ce que je vous propose, c'est l'optimisation professionnelle de cette fiche pour maximiser votre visibilité et attirer plus de clients.",
+    answer: "Oui, la création et la gestion d'une fiche Google Business Profile est entièrement gratuite. Ce que nous vous proposons, c'est l'optimisation professionnelle de cette fiche pour maximiser votre visibilité et attirer plus de clients.",
   },
   {
     question: "A qui s'adresse l'offre d'optimisation Google Business Boost ?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "Quand commence l'optimisation de ma fiche entreprise ?",
-    answer: "L'optimisation commence dès validation de votre commande et réception du paiement. Je vous contacte dans les 24-48h pour récupérer les accès et informations nécessaires, puis je démarre l'audit de votre fiche.",
+    answer: "L'optimisation commence dès validation de votre commande et réception du paiement. nous vous contactons dans les 24-48h pour récupérer les accès et informations nécessaires, puis nous démarrons l'audit de votre fiche.",
   },
   {
     question: "Y a-t-il un engagement sur l'offre mensuelle ?",

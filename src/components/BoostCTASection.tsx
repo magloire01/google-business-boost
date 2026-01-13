@@ -42,42 +42,6 @@ const BoostCTASection = () => {
         <div className="flex justify-center mb-8 sm:mb-12">
           <img src={logo} alt="Google Business Boost" className="h-24 sm:h-32 md:h-40" />
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg text-center">
-            <h4 className="text-lg sm:text-xl font-bold text-teal mb-2">BOOST LOCAL</h4>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">Audit + Optimisation</p>
-            <p className="text-lg sm:text-2xl font-bold text-coral mb-1">
-              290€ HT (pour les 10 premiers clients)
-            </p>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">au lieu de 349€ HT</p>
-              <p className="text-xs sm:text-sm text-foreground mb-4 sm:mb-6">
-                Idéal pour : ceux qui veulent une fiche optimisée
-              </p>
-            <a href="#offres" >
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
-                Je booste mon business maintenant
-              </Button>
-            </a>
-          </div>
-
-          <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-8 shadow-lg text-center">
-            <h4 className="text-lg sm:text-xl font-bold text-pink-soft mb-2">BOOST MENSUEL</h4>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">Suivi et gestion continue</p>
-            <p className="text-lg sm:text-2xl font-bold text-coral mb-1">
-              150€ HT / mois
-            </p>
-            <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4">paiement mensuel</p>
-            <p className="text-xs sm:text-sm text-foreground mb-4 sm:mb-6">
-              Idéal pour : ceux qui veulent un suivi régulier
-            </p>
-            <a href="#offres">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
-                Je veux un suivi mensuel
-              </Button>
-            </a>
-          </div>
-        </div>
       </div>
 
       {/* Wave divider */}

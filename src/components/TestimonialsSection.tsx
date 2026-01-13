@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "lola lola",
-    date: "il y a 10 mois",
+    date: "il y a 03 mois",
     rating: 5,
     text: "Merci beaucoup Bélinda pour cette superbe collaboration ! Non seulement pour ton professionnalisme ma...",
     avatar: "L",
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     name: "Sélim NIEDERHOFFER",
-    date: "il y a 1 année",
+    date: "il y a 02 mois",
     rating: 5,
     text: "Superbe collaboration avec Bélinda ! C'est une copywriter sérieuse, créative, qui a été d'une grande aide sur un projet éditorial récent. Allez-y les yeux fermés : rigueur validée !",
     avatar: "S",
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     name: "Sophie TAILLIEU",
-    date: "il y a 1 année",
+    date: "il y a 06 mois",
     rating: 5,
     text: "Belinda est très à l'écoute et a à cœur de comprendre réellement le produit qui fait l'objet de la page de vente ainsi que le public cible. Elle est également force de proposition pour...",
     avatar: "S",

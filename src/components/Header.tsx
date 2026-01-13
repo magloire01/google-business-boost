@@ -26,13 +26,13 @@ const Header = () => {
       {/* Top bar */}
       <div className="hidden md:block bg-teal text-white py-2">
         <div className="container mx-auto px-4 flex items-center justify-end gap-6 text-sm">
-          <a href="tel:+33600000000" className="flex items-center gap-2 hover:text-white/80 transition-colors">
+          <a href="tel:+33757755997" className="flex items-center gap-2 hover:text-white/80 transition-colors">
             <Phone className="w-4 h-4" />
-            <span>06 00 00 00 00</span>
+            <span>+33 7 57 75 59 97</span>
           </a>
-          <a href="mailto:contact@googlebusinessboost.fr" className="flex items-center gap-2 hover:text-white/80 transition-colors">
+          <a href="mailto:Businessboostprofile@gmail.com" className="flex items-center gap-2 hover:text-white/80 transition-colors">
             <Mail className="w-4 h-4" />
-            <span>contact@googlebusinessboost.fr</span>
+            <span>Businessboostprofile@gmail.com</span>
           </a>
         </div>
       </div>
@@ -101,13 +101,13 @@ const Header = () => {
                   </Button>
                 </div>
                 <div className="flex flex-col gap-2 pt-4 text-sm text-foreground/70">
-                  <a href="tel:+33600000000" className="flex items-center gap-2">
+                  <a href="tel:+33757755997" className="flex items-center gap-2">
                     <Phone className="w-4 h-4" />
-                    <span>06 00 00 00 00</span>
+                    <span>+33 7 57 75 59 97</span>
                   </a>
-                  <a href="mailto:contact@googlebusinessboost.fr" className="flex items-center gap-2">
+                  <a href="mailto:Businessboostprofile@gmail.com" className="flex items-center gap-2">
                     <Mail className="w-4 h-4" />
-                    <span>contact@googlebusinessboost.fr</span>
+                    <span>Businessboostprofile@gmail.com</span>
                   </a>
                 </div>
               </nav>
