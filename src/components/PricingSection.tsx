@@ -70,7 +70,7 @@ const PricingSection = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-foreground mb-8 sm:mb-12 max-w-4xl mx-auto">
-          Nous avons créé 3 offres spécialement pensées pour vous.
+          Nous avons créé 7 offres spécialement pensées pour vous.
         </p>
 
         <div className="grid grid-cols-1 gap-4 sm:gap-6 max-w-6xl mx-auto mb-6 sm:mb-8">
@@ -233,7 +233,7 @@ const PricingSection = () => {
                 className="w-full sm:w-auto text-xs sm:text-sm lg:text-base px-4 sm:px-6"
                 onClick={() => handleCheckout("CREATION_SITE_HEBERGEMENT")}
               >
-                Je choisis la création de site web & hébergement
+                Je choisis la création de site web
               </Button>
             </div>
           </div>
@@ -263,7 +263,7 @@ const PricingSection = () => {
                 className="w-auto sm:w-auto text-sm sm:text-sm mx-3 px-4 sm:px-6"
                 onClick={() => handleCheckout("REFERENCEMENT_MISE_A_JOUR")}
               >
-                Je choisis le référencement & la mise à jour de la page
+                Je choisis le référencement
               </Button>
             </div>
           </div>

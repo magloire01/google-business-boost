@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Sélim NIEDERHOFFER",
     date: "il y a 02 mois",
-    rating: 5,
+    rating: 3,
     text: "Superbe collaboration avec Bélinda ! C'est une copywriter sérieuse, créative, qui a été d'une grande aide sur un projet éditorial récent. Allez-y les yeux fermés : rigueur validée !",
     avatar: "S",
     avatarBg: "bg-amber-600",
@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Sophie TAILLIEU",
     date: "il y a 06 mois",
-    rating: 5,
+    rating: 4,
     text: "Belinda est très à l'écoute et a à cœur de comprendre réellement le produit qui fait l'objet de la page de vente ainsi que le public cible. Elle est également force de proposition pour...",
     avatar: "S",
     avatarBg: "bg-gray-500",

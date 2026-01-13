@@ -133,9 +133,11 @@ const ProcessSection = () => {
           </ul>
 
           <div className="text-center">
-            <Button variant="cta" size="lg">
-              Je veux booster mon business maintenant
-            </Button>
+            <a href="#offres">
+              <Button variant="cta" size="lg">
+                Je veux booster mon business maintenant
+              </Button>
+            </a>
             <p className="text-white mt-4 font-medium">
               Remplissez le questionnaire et nous revenons vite vers vous. Promis ! 😊
             </p>
