@@ -16,8 +16,8 @@ const PACKS = {
     recurring: true,
   },
   MISE_A_JOUR_IA: {
-    amount: 50, // 80000 - 800€
-    name: "Mise à jour + IA [TEST]",
+    amount: 80000, // 800€
+    name: "Mise à jour + IA",
     description: "Mise à jour de vos contenus avec optimisation IA.",
     recurring: false,
   },
